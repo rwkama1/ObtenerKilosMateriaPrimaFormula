@@ -1,0 +1,10 @@
+C:\Users\Waldemar\Desktop\Cosas Programacion\windowsform\TestingWindowsforms\Testing\obj\Debug\Testing.csprojAssemblyReference.cache
+C:\Users\Waldemar\Desktop\Cosas Programacion\windowsform\TestingWindowsforms\Testing\obj\Debug\Testing.Form1.resources
+C:\Users\Waldemar\Desktop\Cosas Programacion\windowsform\TestingWindowsforms\Testing\obj\Debug\Testing.Properties.Resources.resources
+C:\Users\Waldemar\Desktop\Cosas Programacion\windowsform\TestingWindowsforms\Testing\obj\Debug\Testing.csproj.GenerateResource.cache
+C:\Users\Waldemar\Desktop\Cosas Programacion\windowsform\TestingWindowsforms\Testing\obj\Debug\Testing.csproj.CoreCompileInputs.cache
+C:\Users\Waldemar\Desktop\Cosas Programacion\windowsform\TestingWindowsforms\Testing\bin\Debug\Testing.exe.config
+C:\Users\Waldemar\Desktop\Cosas Programacion\windowsform\TestingWindowsforms\Testing\bin\Debug\Testing.exe
+C:\Users\Waldemar\Desktop\Cosas Programacion\windowsform\TestingWindowsforms\Testing\bin\Debug\Testing.pdb
+C:\Users\Waldemar\Desktop\Cosas Programacion\windowsform\TestingWindowsforms\Testing\obj\Debug\Testing.exe
+C:\Users\Waldemar\Desktop\Cosas Programacion\windowsform\TestingWindowsforms\Testing\obj\Debug\Testing.pdb
