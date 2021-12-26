@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Windows.Forms;
 
 namespace Testing
@@ -188,9 +189,39 @@ namespace Testing
 
         private void groupBox1_Validating(object sender, CancelEventArgs e)
         {
+        }
+
+        private void Imprimir(object sender, PrintPageEventArgs e)
+        {
+            string lineahorizontal = "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+            Font font = new Font("Arial", 14);
+           SolidBrush  brush = new SolidBrush(Color.Black);
+
+            Graphics g = e.Graphics;
+            g.DrawString(lineahorizontal, font,brush, 0, 0);
+        }
+
+       
+        private void matrizDePuntoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
 
+        private void graficaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+            PrintDocument prdocument = new PrintDocument();
+            PrinterSettings printers = new PrinterSettings();
+            PrintDialog pdialog = new PrintDialog();
+            pdialog.Document = prdocument;
+            prdocument.PrinterSettings = printers;
+            prdocument.PrintPage += Imprimir;
+            if (pdialog.ShowDialog() == DialogResult.OK)
+            {
+                prdocument.Print();
+            }
+           
+
+        }
     }
 }

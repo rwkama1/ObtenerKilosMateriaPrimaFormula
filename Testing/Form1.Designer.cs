@@ -29,23 +29,29 @@ namespace Testing
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.Formula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MateriaPrima = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Porcentaje = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Kilos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dtp = new System.Windows.Forms.DateTimePicker();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.reImprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matrizDePuntoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graficaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvDatos
@@ -68,36 +74,36 @@ namespace Testing
             // 
             // Formula
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle5.Format = "N0";
-            dataGridViewCellStyle5.NullValue = null;
-            this.Formula.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.Format = "N0";
+            dataGridViewCellStyle1.NullValue = null;
+            this.Formula.DefaultCellStyle = dataGridViewCellStyle1;
             this.Formula.HeaderText = "Formula";
             this.Formula.Name = "Formula";
             this.Formula.ReadOnly = true;
             // 
             // MateriaPrima
             // 
-            dataGridViewCellStyle6.NullValue = null;
-            this.MateriaPrima.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.NullValue = null;
+            this.MateriaPrima.DefaultCellStyle = dataGridViewCellStyle2;
             this.MateriaPrima.HeaderText = "Materia Prima";
             this.MateriaPrima.Name = "MateriaPrima";
             this.MateriaPrima.ReadOnly = true;
             // 
             // Porcentaje
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.Format = "N0";
-            dataGridViewCellStyle7.NullValue = null;
-            this.Porcentaje.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "N0";
+            dataGridViewCellStyle3.NullValue = null;
+            this.Porcentaje.DefaultCellStyle = dataGridViewCellStyle3;
             this.Porcentaje.HeaderText = "Porcentaje";
             this.Porcentaje.Name = "Porcentaje";
             this.Porcentaje.ReadOnly = true;
             // 
             // Kilos
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Kilos.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Kilos.DefaultCellStyle = dataGridViewCellStyle4;
             this.Kilos.HeaderText = "Kilos";
             this.Kilos.Name = "Kilos";
             this.Kilos.ReadOnly = true;
@@ -114,6 +120,23 @@ namespace Testing
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtrar";
             this.groupBox1.Validating += new System.ComponentModel.CancelEventHandler(this.groupBox1_Validating);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(461, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(101, 17);
+            this.checkBox1.TabIndex = 2;
+            this.checkBox1.Text = "formula vendida";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(233, 16);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 1;
             // 
             // dtp
             // 
@@ -132,23 +155,6 @@ namespace Testing
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(233, 16);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 1;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(461, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(101, 17);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "formula vendida";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // btnBuscar
             // 
             this.btnBuscar.Location = new System.Drawing.Point(631, 32);
@@ -158,11 +164,42 @@ namespace Testing
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reImprimirToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(134, 26);
+            // 
+            // reImprimirToolStripMenuItem
+            // 
+            this.reImprimirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.matrizDePuntoToolStripMenuItem,
+            this.graficaToolStripMenuItem});
+            this.reImprimirToolStripMenuItem.Name = "reImprimirToolStripMenuItem";
+            this.reImprimirToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.reImprimirToolStripMenuItem.Text = "ReImprimir";
+            // 
+            // matrizDePuntoToolStripMenuItem
+            // 
+            this.matrizDePuntoToolStripMenuItem.Name = "matrizDePuntoToolStripMenuItem";
+            this.matrizDePuntoToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.matrizDePuntoToolStripMenuItem.Text = "Matriz de punto";
+            this.matrizDePuntoToolStripMenuItem.Click += new System.EventHandler(this.matrizDePuntoToolStripMenuItem_Click);
+            // 
+            // graficaToolStripMenuItem
+            // 
+            this.graficaToolStripMenuItem.Name = "graficaToolStripMenuItem";
+            this.graficaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.graficaToolStripMenuItem.Text = "Grafica";
+            this.graficaToolStripMenuItem.Click += new System.EventHandler(this.graficaToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(808, 431);
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.groupBox1);
@@ -173,6 +210,7 @@ namespace Testing
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -190,6 +228,10 @@ namespace Testing
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem reImprimirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem matrizDePuntoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem graficaToolStripMenuItem;
     }
 }
 
